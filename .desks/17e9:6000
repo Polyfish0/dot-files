@@ -1,0 +1,5 @@
+if [ $(xrandr | grep "DVI-I-1-1 connected" | wc -l) -gt 0 ]; then
+	xrandr --output eDP-1 --primary --auto --below DVI-I-1-1 --output DVI-I-1-1 --auto --output DVI-I-2-2 --right-of DVI-I-1-1 --auto
+else
+	xrandr --output eDP-1 --primary --auto --output DVI-I-1-1 --off --output DVI-I-2-2 --off
+fi
