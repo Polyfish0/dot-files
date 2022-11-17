@@ -1,6 +1,6 @@
 :lua require('plugins')
 
-colorscheme tokyonight-storm
+colorscheme tokyonight-night
 
 :set number
 
@@ -9,3 +9,4 @@ let mapleader=' '
 
 nnoremap <leader>e :Neotree toggle<cr>
 nnoremap <leader>w :w<cr>
+nnoremap <leader>h :noh<cr>
