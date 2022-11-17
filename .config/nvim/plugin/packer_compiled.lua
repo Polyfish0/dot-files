@@ -74,11 +74,31 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["asyncomplete-lsp.vim"] = {
+    loaded = true,
+    path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/asyncomplete-lsp.vim",
+    url = "https://github.com/prabirshrestha/asyncomplete-lsp.vim"
+  },
+  ["asyncomplete.vim"] = {
+    loaded = true,
+    path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/asyncomplete.vim",
+    url = "https://github.com/prabirshrestha/asyncomplete.vim"
+  },
   ["bufferline.nvim"] = {
     config = { 'require("config/bufferline")' },
     loaded = true,
     path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/bufferline.nvim",
     url = "https://github.com/akinsho/bufferline.nvim"
+  },
+  ["ddc-vim-lsp"] = {
+    loaded = true,
+    path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/ddc-vim-lsp",
+    url = "https://github.com/shun/ddc-vim-lsp"
+  },
+  ["ddc.vim"] = {
+    loaded = true,
+    path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/ddc.vim",
+    url = "https://github.com/Shougo/ddc.vim"
   },
   ["lualine.nvim"] = {
     config = { 'require("config/lualine")' },
@@ -107,11 +127,11 @@ _G.packer_plugins = {
     path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/nui.nvim",
     url = "https://github.com/MunifTanjim/nui.nvim"
   },
-  ["nvim-lspconfig"] = {
-    config = { 'require("config/lsp")' },
+  ["nvim-treesitter"] = {
+    config = { 'require("config/treesitter")' },
     loaded = true,
-    path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
-    url = "https://github.com/neovim/nvim-lspconfig"
+    path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
@@ -133,18 +153,20 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
     url = "https://github.com/folke/tokyonight.nvim"
+  },
+  ["vim-lsp"] = {
+    loaded = true,
+    path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/vim-lsp",
+    url = "https://github.com/prabirshrestha/vim-lsp"
+  },
+  ["vim-lsp-settings"] = {
+    loaded = true,
+    path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/vim-lsp-settings",
+    url = "https://github.com/mattn/vim-lsp-settings"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-lspconfig
-time([[Config for nvim-lspconfig]], true)
-require("config/lsp")
-time([[Config for nvim-lspconfig]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-require("config/lualine")
-time([[Config for lualine.nvim]], false)
 -- Config for: neo-tree.nvim
 time([[Config for neo-tree.nvim]], true)
 require("config/neotree")
@@ -157,6 +179,14 @@ time([[Config for tokyonight.nvim]], false)
 time([[Config for bufferline.nvim]], true)
 require("config/bufferline")
 time([[Config for bufferline.nvim]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+require("config/treesitter")
+time([[Config for nvim-treesitter]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+require("config/lualine")
+time([[Config for lualine.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

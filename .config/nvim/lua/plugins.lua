@@ -15,8 +15,26 @@ return require('packer').startup({function(use)
   use 'wbthomason/packer.nvim'
 
   use {
-    'neovim/nvim-lspconfig',
-    config = 'require("config/lsp")'
+    'nvim-treesitter/nvim-treesitter',
+    config = 'require("config/treesitter")'
+  }
+
+  use {
+    'prabirshrestha/vim-lsp',
+    'mattn/vim-lsp-settings',
+    config = 'require("config/vim-lsp")'
+  }
+
+  use {
+    'prabirshrestha/asyncomplete.vim',
+    'prabirshrestha/asyncomplete-lsp.vim',
+    config = 'require("config/asyncomplete")'
+  }
+
+  use {
+    'Shougo/ddc.vim',
+    'shun/ddc-vim-lsp',
+    config = 'require("config/ddc")'
   }
 
   use {
