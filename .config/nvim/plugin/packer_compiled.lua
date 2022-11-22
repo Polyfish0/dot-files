@@ -148,6 +148,12 @@ _G.packer_plugins = {
     path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["toggleterm.nvim"] = {
+    config = { 'require("config/toggleterm")' },
+    loaded = true,
+    path = "/home/mwestphal/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
   ["tokyonight.nvim"] = {
     config = { 'require("config/tokyonight")' },
     loaded = true,
@@ -167,10 +173,6 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: neo-tree.nvim
-time([[Config for neo-tree.nvim]], true)
-require("config/neotree")
-time([[Config for neo-tree.nvim]], false)
 -- Config for: tokyonight.nvim
 time([[Config for tokyonight.nvim]], true)
 require("config/tokyonight")
@@ -179,6 +181,10 @@ time([[Config for tokyonight.nvim]], false)
 time([[Config for bufferline.nvim]], true)
 require("config/bufferline")
 time([[Config for bufferline.nvim]], false)
+-- Config for: toggleterm.nvim
+time([[Config for toggleterm.nvim]], true)
+require("config/toggleterm")
+time([[Config for toggleterm.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 require("config/treesitter")
@@ -187,6 +193,10 @@ time([[Config for nvim-treesitter]], false)
 time([[Config for lualine.nvim]], true)
 require("config/lualine")
 time([[Config for lualine.nvim]], false)
+-- Config for: neo-tree.nvim
+time([[Config for neo-tree.nvim]], true)
+require("config/neotree")
+time([[Config for neo-tree.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

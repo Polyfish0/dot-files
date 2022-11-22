@@ -15,6 +15,12 @@ return require('packer').startup({function(use)
   use 'wbthomason/packer.nvim'
 
   use {
+    'akinsho/toggleterm.nvim',
+    tag = '*',
+    config = 'require("config/toggleterm")'
+  }
+
+  use {
     'nvim-treesitter/nvim-treesitter',
     config = 'require("config/treesitter")'
   }
